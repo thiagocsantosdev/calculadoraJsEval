@@ -1,0 +1,93 @@
+/* Resetando CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 400ms;
+}
+
+/* Criando padrões  rgb(58, 231, 116);*/
+:root{
+   --main-bg-color:lightgray;
+   --second-bg-color: #1f1f1f;
+   --third-bg-color:rgb(58, 231, 116);
+   --quarta-bg-color:red;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 200px;
+    height: 300px;
+    background-color: var(--second-bg-color);
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    margin: 20px;
+    background-color:rgb(27, 26, 26);
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: var(--main-bg-color);
+    text-align: end;
+
+}
+
+.display p{
+    margin: 5px;
+}
+
+.keyboard{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    gap:5px;
+
+}
+
+.keyboard-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.equal {
+    background-color: var(--third-bg-color);
+}
+
+.c-button{
+    background-color: var(--quarta-bg-color);
+}
+
+.operations-button{
+    background-color: var(--main-bg-color);
+    color: #1f1f1f;
+}
+
+.keyboard-button:hover{
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
