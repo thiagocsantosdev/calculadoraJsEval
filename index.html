@@ -9,30 +9,41 @@
 <body>
     <main>
         <div class="display">
-            <p class="display.numbers">25</p>
+            <p class="display.numbers" id="resultado"></p>
         </div>
         <div class="keyboard">
-            <div class="keyboard-button c-button">C</div>
-            <div class="keyboard-button operations-button">DE</div>
-            <div class="keyboard-button operations-button">%</div>
-            <div class="keyboard-button operations-button">/</div>
-            <div class="keyboard-button">7</div>
-            <div class="keyboard-button">8</div>
-            <div class="keyboard-button">9</div>
-            <div class="keyboard-button operations-button">*</div>
-            <div class="keyboard-button">4</div>
-            <div class="keyboard-button">5</div>
-            <div class="keyboard-button">6</div>
-            <div class="keyboard-button operations-button">-</div>
-            <div class="keyboard-button">1</div>
-            <div class="keyboard-button">2</div>
-            <div class="keyboard-button">3</div>
-            <div class="keyboard-button operations-button">+</div>
-            <div class="keyboard-button">00</div>
-            <div class="keyboard-button">0</div>
-            <div class="keyboard-button">.</div>
-            <div class="keyboard-button equal">=</div>
+           
+            <div class="keyboard-button c-button" onclick="clean()">C</div>
+            <div class="keyboard-button operations-button" onclick="back()"> < </div>
+            <div class="keyboard-button operations-button" onclick="insert()"></div>
+            <div class="keyboard-button operations-button" onclick="insert('/')">/</div>
+            
+            <div class="keyboard-button" onclick="insert('7')">7</div>
+            <div class="keyboard-button" onclick="insert('8')">8</div>
+            <div class="keyboard-button" onclick="insert('9')">9</div>
+           
+            <div class="keyboard-button operations-button" onclick="insert('*')">*</div>
+           
+            <div class="keyboard-button" onclick="insert('4')">4</div>
+            <div class="keyboard-button" onclick="insert('5')">5</div>
+            <div class="keyboard-button" onclick="insert('6')">6</div>
+            
+            <div class="keyboard-button operations-button" onclick="insert('-')">-</div>
+            
+            <div class="keyboard-button " onclick="insert('1')">1</div>
+            <div class="keyboard-button" onclick="insert('2')">2</div>
+            <div class="keyboard-button" onclick="insert('3')">3</div>
+           
+            <div class="keyboard-button operations-button" onclick="insert('+')">+</div>
+            
+            <div class="keyboard-button" onclick="insert('00')">00</div>
+            <div class="keyboard-button" onclick="insert('0')">0</div>
+            <div class="keyboard-button" onclick="insert('.')" >.</div>
+           
+            <div class="keyboard-button equal" onclick="calcular()">=</div>
         </div>
     </main>
+    <footer><p>calculadora eval 1.0</p></footer>
 </body>
+<script src="/scripts/script.js"></script>
 </html>
